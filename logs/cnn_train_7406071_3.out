@@ -1,0 +1,390 @@
+=========================================================
+Job ID: 7406071_3
+模型配置: I5/R20
+运行节点: gpu1-41
+开始时间: Fri 24 Oct 2025 12:17:38 AM CST
+GPU信息:
+Sat May 24 00:17:38 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.54.03              Driver Version: 535.54.03    CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A800-SXM4-80GB          On  | 00000000:92:00.0 Off |                    0 |
+| N/A   41C    P0              62W / 400W |      5MiB / 81920MiB |      0%      Default |
+|                                         |                      |             Disabled |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+=========================================================
+Model will be saved to: /hpc2hdd/home/jliu043/CNN_Replicate/results/D5L2F53S11D11MP21F53S11D11MP21C64/5d20p-lr1E-04-dp0.50-maTrue-vbTrue-monthlyTrained-noDelayedReturn
+Portfolio results will be saved to: /hpc2hdd/home/jliu043/CNN_Replicate/results/portfolio/USA_D5L2F53S11D11MP21F53S11D11MP21C64_5d20p-lr1E-04-dp0.50-maTrue-vbTrue-monthlyTrained-noDelayedReturn_ensem1
+
+开始训练 I5/R20 模型...
+开始训练 I5/R20 的 1 个模型...
+训练模型 1/1 (I5/R20)
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404514_w5_y1993_5d_daily_has_vb_[5]_ma_1993_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404514_w5_y1993_5d_daily_has_vb_[5]_ma_1993_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404514_w5_y1993_5d_daily_has_vb_[5]_ma_1993_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404514_w5_y1993_5d_daily_has_vb_[5]_ma_1993_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1640934)
+Loaded 1640934 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_1993.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1640934
+Year 1993: filtered samples size: 1640934
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404515_w5_y1994_5d_daily_has_vb_[5]_ma_1994_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404515_w5_y1994_5d_daily_has_vb_[5]_ma_1994_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404515_w5_y1994_5d_daily_has_vb_[5]_ma_1994_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404515_w5_y1994_5d_daily_has_vb_[5]_ma_1994_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1806910)
+Loaded 1806910 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_1994.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1806910
+Year 1994: filtered samples size: 1806910
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404516_w5_y1995_5d_daily_has_vb_[5]_ma_1995_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404516_w5_y1995_5d_daily_has_vb_[5]_ma_1995_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404516_w5_y1995_5d_daily_has_vb_[5]_ma_1995_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404516_w5_y1995_5d_daily_has_vb_[5]_ma_1995_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1880160)
+Loaded 1880160 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_1995.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1880160
+Year 1995: filtered samples size: 1880160
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404517_w5_y1996_5d_daily_has_vb_[5]_ma_1996_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404517_w5_y1996_5d_daily_has_vb_[5]_ma_1996_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404517_w5_y1996_5d_daily_has_vb_[5]_ma_1996_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404517_w5_y1996_5d_daily_has_vb_[5]_ma_1996_labels.feather
+Warning: Number of images (3000000) does not match number of labels (2029148)
+Loaded 2029148 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_1996.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 2029148
+Year 1996: filtered samples size: 2029148
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404518_w5_y1997_5d_daily_has_vb_[5]_ma_1997_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404518_w5_y1997_5d_daily_has_vb_[5]_ma_1997_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404518_w5_y1997_5d_daily_has_vb_[5]_ma_1997_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404518_w5_y1997_5d_daily_has_vb_[5]_ma_1997_labels.feather
+Warning: Number of images (3000000) does not match number of labels (2125859)
+Loaded 2125859 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_1997.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 2125859
+Year 1997: filtered samples size: 2125859
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404519_w5_y1998_5d_daily_has_vb_[5]_ma_1998_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404519_w5_y1998_5d_daily_has_vb_[5]_ma_1998_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404519_w5_y1998_5d_daily_has_vb_[5]_ma_1998_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404519_w5_y1998_5d_daily_has_vb_[5]_ma_1998_labels.feather
+Warning: Number of images (3000000) does not match number of labels (2110110)
+Loaded 2110110 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_1998.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 2110110
+Year 1998: filtered samples size: 2110110
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404520_w5_y1999_5d_daily_has_vb_[5]_ma_1999_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404520_w5_y1999_5d_daily_has_vb_[5]_ma_1999_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404520_w5_y1999_5d_daily_has_vb_[5]_ma_1999_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404520_w5_y1999_5d_daily_has_vb_[5]_ma_1999_labels.feather
+Warning: Number of images (3000000) does not match number of labels (2004587)
+Loaded 2004587 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_1999.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 2004587
+Year 1999: filtered samples size: 2004587
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404521_w5_y2000_5d_daily_has_vb_[5]_ma_2000_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404521_w5_y2000_5d_daily_has_vb_[5]_ma_2000_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404521_w5_y2000_5d_daily_has_vb_[5]_ma_2000_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404521_w5_y2000_5d_daily_has_vb_[5]_ma_2000_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1968327)
+Loaded 1968327 samples
+Loading mean and std from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_all/mean_std_5dmonth_vbTrue_maTrue_2000.npz
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1968327
+I5R20: removing tail for year 2000 (1968327 samples)
+Year 2000: filtered samples size: 1815082
+总样本数: 15412790
+训练集: 10788953样本 (70%)
+验证集: 4623837样本 (30%)
+训练设备: cuda:0
+CNNModel(
+  (conv_layers): Sequential(
+    (0): Sequential(
+      (0): Conv2d(1, 64, kernel_size=(5, 3), stride=(1, 1), padding=(2, 1))
+      (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.01)
+      (3): MaxPool2d(kernel_size=(2, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=True)
+    )
+    (1): Sequential(
+      (0): Conv2d(64, 128, kernel_size=(5, 3), stride=(1, 1), padding=(2, 1))
+      (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): LeakyReLU(negative_slope=0.01)
+      (3): MaxPool2d(kernel_size=(2, 1), stride=(2, 1), padding=0, dilation=1, ceil_mode=True)
+    )
+    (2): Flatten()
+    (3): Dropout(p=0.5, inplace=False)
+  )
+  (fc): Linear(in_features=15360, out_features=2, bias=True)
+)
+Epoch 0/4 (train): Loss: 0.0871, Acc: 0.9832, MCC: -0.0002
+Epoch 0/4 (validate): Loss: 0.0845, Acc: 0.9833, MCC: nan
+Epoch 0: 发现更好的模型，验证损失: 0.0845
+Epoch 1/4 (train): Loss: 0.0849, Acc: 0.9833, MCC: nan
+Epoch 1/4 (validate): Loss: 0.0845, Acc: 0.9833, MCC: nan
+Epoch 1: 发现更好的模型，验证损失: 0.0845
+Epoch 2/4 (train): Loss: 0.0847, Acc: 0.9833, MCC: nan
+Epoch 2/4 (validate): Loss: 0.0842, Acc: 0.9833, MCC: nan
+Epoch 2: 发现更好的模型，验证损失: 0.0842
+Epoch 3/4 (train): Loss: 0.0846, Acc: 0.9833, MCC: nan
+Epoch 3/4 (validate): Loss: 0.0841, Acc: 0.9833, MCC: nan
+Epoch 3: 发现更好的模型，验证损失: 0.0841
+Epoch 4/4 (train): Loss: 0.0845, Acc: 0.9833, MCC: nan
+Epoch 4/4 (validate): Loss: 0.0841, Acc: 0.9833, MCC: nan
+Epoch 4: 发现更好的模型，验证损失: 0.0841
+训练完成，用时 63分 14秒
+最佳验证损失: 0.0841 (Epoch 4)
+模型已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/D5L2F53S11D11MP21F53S11D11MP21C64/5d20p-lr1E-04-dp0.50-maTrue-vbTrue-monthlyTrained-noDelayedReturn/checkpoint0.pth.tar
+I5/R20 模型集成训练完成
+
+生成 2001-2019 预测结果...
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404522_w5_y2001_5d_daily_has_vb_[5]_ma_2001_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404522_w5_y2001_5d_daily_has_vb_[5]_ma_2001_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404522_w5_y2001_5d_daily_has_vb_[5]_ma_2001_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404522_w5_y2001_5d_daily_has_vb_[5]_ma_2001_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1782623)
+Loaded 1782623 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1782623
+Year 2001: filtered samples size: 1782623
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2001.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404523_w5_y2002_5d_daily_has_vb_[5]_ma_2002_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404523_w5_y2002_5d_daily_has_vb_[5]_ma_2002_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404523_w5_y2002_5d_daily_has_vb_[5]_ma_2002_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404523_w5_y2002_5d_daily_has_vb_[5]_ma_2002_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1698095)
+Loaded 1698095 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1698095
+Year 2002: filtered samples size: 1698095
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2002.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404524_w5_y2003_5d_daily_has_vb_[5]_ma_2003_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404524_w5_y2003_5d_daily_has_vb_[5]_ma_2003_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404524_w5_y2003_5d_daily_has_vb_[5]_ma_2003_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404524_w5_y2003_5d_daily_has_vb_[5]_ma_2003_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1628028)
+Loaded 1628028 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1628028
+Year 2003: filtered samples size: 1628028
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2003.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404525_w5_y2004_5d_daily_has_vb_[5]_ma_2004_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404525_w5_y2004_5d_daily_has_vb_[5]_ma_2004_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404525_w5_y2004_5d_daily_has_vb_[5]_ma_2004_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404525_w5_y2004_5d_daily_has_vb_[5]_ma_2004_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1630350)
+Loaded 1630350 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1630350
+Year 2004: filtered samples size: 1630350
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2004.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404526_w5_y2005_5d_daily_has_vb_[5]_ma_2005_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404526_w5_y2005_5d_daily_has_vb_[5]_ma_2005_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404526_w5_y2005_5d_daily_has_vb_[5]_ma_2005_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404526_w5_y2005_5d_daily_has_vb_[5]_ma_2005_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1647512)
+Loaded 1647512 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1647512
+Year 2005: filtered samples size: 1647512
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2005.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404527_w5_y2006_5d_daily_has_vb_[5]_ma_2006_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404527_w5_y2006_5d_daily_has_vb_[5]_ma_2006_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404527_w5_y2006_5d_daily_has_vb_[5]_ma_2006_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404527_w5_y2006_5d_daily_has_vb_[5]_ma_2006_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1654749)
+Loaded 1654749 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1654749
+Year 2006: filtered samples size: 1654749
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2006.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404528_w5_y2007_5d_daily_has_vb_[5]_ma_2007_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404528_w5_y2007_5d_daily_has_vb_[5]_ma_2007_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404528_w5_y2007_5d_daily_has_vb_[5]_ma_2007_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404528_w5_y2007_5d_daily_has_vb_[5]_ma_2007_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1697887)
+Loaded 1697887 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1697887
+Year 2007: filtered samples size: 1697887
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2007.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404529_w5_y2008_5d_daily_has_vb_[5]_ma_2008_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404529_w5_y2008_5d_daily_has_vb_[5]_ma_2008_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404529_w5_y2008_5d_daily_has_vb_[5]_ma_2008_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404529_w5_y2008_5d_daily_has_vb_[5]_ma_2008_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1696542)
+Loaded 1696542 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1696542
+Year 2008: filtered samples size: 1696542
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2008.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404530_w5_y2009_5d_daily_has_vb_[5]_ma_2009_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404530_w5_y2009_5d_daily_has_vb_[5]_ma_2009_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404530_w5_y2009_5d_daily_has_vb_[5]_ma_2009_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404530_w5_y2009_5d_daily_has_vb_[5]_ma_2009_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1615736)
+Loaded 1615736 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1615736
+Year 2009: filtered samples size: 1615736
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2009.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404531_w5_y2010_5d_daily_has_vb_[5]_ma_2010_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404531_w5_y2010_5d_daily_has_vb_[5]_ma_2010_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404531_w5_y2010_5d_daily_has_vb_[5]_ma_2010_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404531_w5_y2010_5d_daily_has_vb_[5]_ma_2010_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1617551)
+Loaded 1617551 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1617551
+Year 2010: filtered samples size: 1617551
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2010.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404532_w5_y2011_5d_daily_has_vb_[5]_ma_2011_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404532_w5_y2011_5d_daily_has_vb_[5]_ma_2011_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404532_w5_y2011_5d_daily_has_vb_[5]_ma_2011_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404532_w5_y2011_5d_daily_has_vb_[5]_ma_2011_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1635729)
+Loaded 1635729 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1635729
+Year 2011: filtered samples size: 1635729
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2011.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404533_w5_y2012_5d_daily_has_vb_[5]_ma_2012_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404533_w5_y2012_5d_daily_has_vb_[5]_ma_2012_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404533_w5_y2012_5d_daily_has_vb_[5]_ma_2012_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404533_w5_y2012_5d_daily_has_vb_[5]_ma_2012_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1617009)
+Loaded 1617009 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1617009
+Year 2012: filtered samples size: 1617009
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2012.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404534_w5_y2013_5d_daily_has_vb_[5]_ma_2013_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404534_w5_y2013_5d_daily_has_vb_[5]_ma_2013_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404534_w5_y2013_5d_daily_has_vb_[5]_ma_2013_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404534_w5_y2013_5d_daily_has_vb_[5]_ma_2013_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1640522)
+Loaded 1640522 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1640522
+Year 2013: filtered samples size: 1640522
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2013.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404535_w5_y2014_5d_daily_has_vb_[5]_ma_2014_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404535_w5_y2014_5d_daily_has_vb_[5]_ma_2014_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404535_w5_y2014_5d_daily_has_vb_[5]_ma_2014_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404535_w5_y2014_5d_daily_has_vb_[5]_ma_2014_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1703695)
+Loaded 1703695 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1703695
+Year 2014: filtered samples size: 1703695
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2014.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404536_w5_y2015_5d_daily_has_vb_[5]_ma_2015_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404536_w5_y2015_5d_daily_has_vb_[5]_ma_2015_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404536_w5_y2015_5d_daily_has_vb_[5]_ma_2015_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404536_w5_y2015_5d_daily_has_vb_[5]_ma_2015_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1744279)
+Loaded 1744279 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1744279
+Year 2015: filtered samples size: 1744279
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2015.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404537_w5_y2016_5d_daily_has_vb_[5]_ma_2016_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404537_w5_y2016_5d_daily_has_vb_[5]_ma_2016_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404537_w5_y2016_5d_daily_has_vb_[5]_ma_2016_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404537_w5_y2016_5d_daily_has_vb_[5]_ma_2016_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1738390)
+Loaded 1738390 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1738390
+Year 2016: filtered samples size: 1738390
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2016.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404538_w5_y2017_5d_daily_has_vb_[5]_ma_2017_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404538_w5_y2017_5d_daily_has_vb_[5]_ma_2017_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404538_w5_y2017_5d_daily_has_vb_[5]_ma_2017_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404538_w5_y2017_5d_daily_has_vb_[5]_ma_2017_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1748946)
+Loaded 1748946 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1748946
+Year 2017: filtered samples size: 1748946
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2017.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404539_w5_y2018_5d_daily_has_vb_[5]_ma_2018_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404539_w5_y2018_5d_daily_has_vb_[5]_ma_2018_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404539_w5_y2018_5d_daily_has_vb_[5]_ma_2018_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404539_w5_y2018_5d_daily_has_vb_[5]_ma_2018_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1791472)
+Loaded 1791472 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1791472
+Year 2018: filtered samples size: 1791472
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2018.csv
+Found dataset files: /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404540_w5_y2019_5d_daily_has_vb_[5]_ma_2019_images.dat and /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404540_w5_y2019_5d_daily_has_vb_[5]_ma_2019_labels.feather
+Loading images from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404540_w5_y2019_5d_daily_has_vb_[5]_ma_2019_images.dat
+Loading labels from /hpc2hdd/home/jliu043/CNN_Replicate/data/stocks_dataset/stocks_USA/dataset_daily_full/full_data_7404540_w5_y2019_5d_daily_has_vb_[5]_ma_2019_labels.feather
+Warning: Number of images (3000000) does not match number of labels (1848951)
+Loaded 1848951 samples
+Calculating mean and std
+Using Ret_month as label
+Using None regression label (None represents classification label)
+Initial number of samples: 1848951
+Year 2019: filtered samples size: 1848951
+使用 1 个模型进行集成预测...
+预测结果已保存到 /hpc2hdd/home/jliu043/CNN_Replicate/results/CNN_I5R20/epoch5_ensem1_train1993-2000/predictions/pred_year2019.csv
+=========================================================
+任务完成时间: Sat 25 Oct 2025 01:56:20 AM CST
+I5/R20 模型训练和测试完成
+=========================================================
