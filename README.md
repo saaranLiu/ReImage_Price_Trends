@@ -1,7 +1,7 @@
 # CNN Stock Trend Prediction
 
 This project implements the CNN model for stock price trend prediction based on the paper "(Re-)Imag(in)ing Price Trends". The model converts OHLC (Open, High, Low, Close) price data into images and uses CNN to predict future price movements. And this is the final project of INFO 5000 (Fall 2025).
-The group members include: Jiaxin Liu, Yushu He, Yurong Tian, Shurui Zhang and Xin Xin
+The members of group 7 include: Jiaxin Liu (24 Mphil student in FTEC), Yushu He (24 PhD student in FTEC), Yurong Tian (24 PhD student in FTEC), Shurui Zhang (25 Mphil student) and Xin Xin (25 Mphil student). 
 
 ## Project Structure
 CNN_REPLICATE/
