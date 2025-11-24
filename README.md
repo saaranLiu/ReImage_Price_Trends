@@ -26,7 +26,6 @@ CNN_REPLICATE/
 ├── logs/           # Training and evaluation logs (See note below)
 ├── Misc/           # Utility functions and configurations
 ├── Model/          # CNN model implementation
-├── patches/        # Code patches and fixes
 ├── Portfolio/      # Portfolio construction and analysis
 ├── scripts/        # Running scripts
 └── cnn_env.yml     # Conda environment configuration
@@ -61,6 +60,7 @@ CNN_REPLICATE/
 
   * Storage for trained models and prediction CSVs.
   * Calculation of performance metrics and portfolio results.
+  * See the reports for more details about the results. The results doesnot upload here because of the file size.
 
 ## Setup and Installation
 
@@ -148,8 +148,7 @@ Main dependencies (see `cnn_env.yml` for the complete list):
 ## Citation
 
 Original paper reference:
-
+```
 > Jiang, J., Kelly, B., & Xiu, D. (2023). (Re‐) Imag (in) ing price trends. *The Journal of Finance*, 78(6), 3193-3249.
+```
 
-```
-```
