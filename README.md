@@ -31,8 +31,6 @@ CNN_REPLICATE/
 └── cnn_env.yml     # Conda environment configuration
 ````
 
-> **Note:** regarding the `logs/` directory, you can check the log files containing task numbers **7406071**, **7406238**, and **7406467** to see exactly how the training and testing were implemented.
-
 ## Key Components
 
 ### Data Processing (`Data/`)
