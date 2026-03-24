@@ -1,20 +1,7 @@
 # CNN Stock Trend Prediction
 
-> **INFO 5000 (Fall 2025) - Group 7 Final Project**
-
 This project implements a Convolutional Neural Network (CNN) model for stock price trend prediction based on the paper **"(Re-)Imag(in)ing Price Trends"**. The model converts OHLC (Open, High, Low, Close) price data into images and uses CNN to predict future price movements.
 
-## Team Members
-
-| Name | Role / Year |
-| :--- | :--- |
-| **Jiaxin Liu** | '24 Mphil student (FTEC) |
-| **Yushu He** | '24 PhD student (FTEC) |
-| **Yurong Tian** | '24 PhD student (FTEC) |
-| **Shurui Zhang** | '25 Mphil student |
-| **Xin Xin** | '25 Mphil student |
-
----
 
 ## Project Structure
 
